@@ -11,12 +11,21 @@ on FreeNode.
 Included tests
 --------------
 
-The repository comes with two ready-to-use test cases:
+The repository comes with four test cases:
 
-1) 'cyclomatic_complexity' - reports excessive cyclomatic complexities in the
+1) 'execute-plain' - checks that the "plain" example of how to access a
+   memory-mapped register works (we cheat and actually write to memory
+   allocated to a string variable in the example).
+
+2) 'execute-packaged_register' - checks that the example of how to access a
+   memory-mapped register through the Memory_Mapped_Register package works (we
+   cheat and actually write to memory allocated to a string variable in the
+   example).
+
+3) 'cyclomatic_complexity' - reports excessive cyclomatic complexities in the
    project sources.
 
-2) 'unused_units' - warns about units which aren't compiled.
+4) 'unused_units' - warns about units which aren't compiled.
 
 
 Links
