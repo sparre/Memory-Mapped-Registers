@@ -14,6 +14,10 @@ package Memory_Mapped_Register is
    Register : Element_Type;
    for Register'Address use Register_Address;
    pragma Volatile (Register);
+private
    pragma Assert (Register'Size = Register_Size,
                   "The size of Element_Type should match the register size.");
+   pragma Assert (Register_Size mod System.Storage_Unit = 0,
+                  "Element_Type should fill a whole number of storage " &
+                  "elements.");
 end Memory_Mapped_Register;
