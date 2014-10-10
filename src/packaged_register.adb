@@ -1,6 +1,7 @@
-with System;
 with Memory_Mapped_Register;
 procedure Packaged_Register is
+   Some_Memory : String := "Hello world!";
+
    type Counts is range 0 .. 7;
    type Counter is
       record
@@ -13,7 +14,7 @@ procedure Packaged_Register is
       end record;
    package Memory_Mapped_Counter is
      new Memory_Mapped_Register (Element_Type     => Counter,
-                                 Register_Address => System.Null_Address,
+                                 Register_Address => Some_Memory'Address,
                                  Register_Size    => 8);
    Counter_Register : Counter renames Memory_Mapped_Counter.Register;
 begin
