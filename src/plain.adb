@@ -5,6 +5,7 @@ procedure Plain is
       record
          Value : Counts;
       end record;
+   for Counter'Size use 8;
    for Counter use
       record
          Value at 0 range 3 .. 5;
