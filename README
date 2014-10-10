@@ -1,0 +1,37 @@
+Memory-Mapped Registers [1]
+===========================
+
+An example of how to use a generic package to ensure a consistent
+implementation of memory-mapped registers.
+
+This is the result of a chat I've had with "Visaoni" on the #Ada IRC channel
+on FreeNode.
+
+
+Included tests
+--------------
+
+The repository comes with two ready-to-use test cases:
+
+1) 'cyclomatic_complexity' - reports excessive cyclomatic complexities in the
+   project sources.
+
+2) 'unused_units' - warns about units which aren't compiled.
+
+
+Links
+-----
+
+If you want to find free Ada tools or libraries AdaIC [2] is an excellent
+starting point.  You can also take a look at my other source text
+repositories [3] or my web site [4].
+
+[1] Source text repository:
+    http://repositories.jacob-sparre.dk/memory-mapped-registers
+[2] Free Ada Tools and Libraries:
+    http://www.adaic.org/ada-resources/tools-libraries/
+[3] My repositories on Bitbucket:
+    http://repositories.jacob-sparre.dk/
+[4] My web site:
+    http://www.jacob-sparre.dk/
+

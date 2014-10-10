@@ -1,0 +1,9 @@
+PROJECT=memory_mapped_registers
+
+GENERATED_EXECUTABLES=bin/plain \
+                      bin/packaged_register
+
+GENERATED_SOURCES=
+
+SCRIPTS=
+
